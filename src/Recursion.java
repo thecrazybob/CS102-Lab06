@@ -29,17 +29,17 @@ public class Recursion {
         System.out.println("(d) Lexicographic ArrayList:");
         ArrayList<String> stringsList = new ArrayList<String>();
         
-        stringsList.add("A");
-        stringsList.add("B");
-        stringsList.add("D");
-        stringsList.add("C");
+        stringsList.add("AA");
+        stringsList.add("AB");
+        stringsList.add("BA");
+        stringsList.add("BB");
         
         System.out.println(isLexicographic(stringsList));
         
         // e
         System.out.println("(e) Even numbers passing criteria:");
         evenNumbers(3,0);
-        System.out.println(isNumberInCritera(142));
+        System.out.println(isNumberInCritera(124));
 
     }
     
