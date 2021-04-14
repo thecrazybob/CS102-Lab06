@@ -79,10 +79,12 @@ public class Recursion {
      */
     public static String decimalToHex(int decimal) {
 
+        // if decimal is less than 10, get the string representation
         if (decimal < 10) {
             return Integer.toString(decimal);
         }
 
+        // for decimal between 10-16 (not including 16)
         else if (decimal < 16) {
             switch (decimal) {
                 case 10:
@@ -102,6 +104,7 @@ public class Recursion {
             }
         }
 
+        // for 16 and above
         else {
             return decimalToHex(decimal / 16) + "" + decimalToHex(decimal % 16);
         }
